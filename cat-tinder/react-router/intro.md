@@ -112,32 +112,34 @@ In this example, we are using React Router to create an unordered list for navig
 ```javascript
 const App = () => {
     return (
-      {/* 3. The set of links and paths are all wrapped in the "BrowserRouter as Router" component */}
-        <Router>
-            <div>
-                <h1>Here is App.js Handling Our Routing</h1>
-                {/* 4. Using a semantic tag to denote the navigation links */}
-                <nav>
-                    <ul>
-                    <li>
-                        {/* 5. Creating the anchor tags using the Link component from React Router */}
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/about/">About</Link>
-                    </li>
-                    <li>
-                        <Link to="/tomato">Tomato</Link>
-                    </li>
-                    </ul>
-                </nav>
+       <>
+         {/* 3. The set of links and paths are all wrapped in the "BrowserRouter as Router" component */}
+           <Router>
+               <div>
+                   <h1>Here is App.js Handling Our Routing</h1>
+                   {/* 4. Using a semantic tag to denote the navigation links */}
+                   <nav>
+                       <ul>
+                       <li>
+                           {/* 5. Creating the anchor tags using the Link component from React Router */}
+                           <Link to="/">Home</Link>
+                       </li>
+                       <li>
+                           <Link to="/about/">About</Link>
+                       </li>
+                       <li>
+                           <Link to="/tomato">Tomato</Link>
+                       </li>
+                       </ul>
+                   </nav>
 
-                {/* 6. Calling the components we imported from "pages" to render in response to the Link */}
-                <Route path="/" exact component={ Home } />
-                <Route path="/about/" component={ AboutUs } />
-                <Route path="/tomato/" component={ Tomato } />
-            </div>
-        </Router>
+                   {/* 6. Calling the components we imported from "pages" to render in response to the Link */}
+                   <Route path="/" exact component={ Home } />
+                   <Route path="/about/" component={ AboutUs } />
+                   <Route path="/tomato/" component={ Tomato } />
+               </div>
+           </Router>
+       </>
     )
 }
 export default App
