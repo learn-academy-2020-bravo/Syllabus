@@ -44,7 +44,7 @@ We start with the index route.  In this endpoint, we want to return all of the c
 ### Create a spec
 We're going to practice Test Driven Development, so let's start with a test.  We'll add a `requests` folder to the `spec` folder that RSPEC generated. Then, we'll add our test file:
 
-**/spec/requests/cats_spec.rb**
+**/spec/requests/cats_request_spec.rb**
 
 ```ruby
 require 'rails_helper'
@@ -87,7 +87,7 @@ If you followed the setup in the last module, then you should already have a cat
 ![Cat Tinder Index](https://s3.amazonaws.com/learn-site/curriculum/cat-tinder/cat_tinder_index.png)
 
 ## Create
-Next we'll tackle the 'create' route.  Let's start with adding a new test:
+Next we'll tackle the 'create' route.  Let's start with adding a new test to **/spec/requests/cats_request_spec.rb**:
 
 ```ruby
   it "creates a cat" do

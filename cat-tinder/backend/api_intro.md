@@ -15,6 +15,9 @@
 
 ## Set Up
 
+
+#### Suggestion: I really appreciate your notes on what files to delete upon creation of our new rails app, I would suggest getting this in the syllabus because it makes our lives easier :)####
+
 #### Creating a new Rails app:
 ```
 $ rails new cat_tinder_backend -d postgresql -T

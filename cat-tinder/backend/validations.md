@@ -29,6 +29,8 @@ Let's write a test for each of these cases.
 
 **spec/models/cat_spec.rb**
 ```ruby
+require 'rails_helper'
+
 RSpec.describe Cat, type: :model do
   it "should validate name" do
     cat = Cat.create
